@@ -1,17 +1,21 @@
-- title: "Is there a superlative rabbit in the ordinal hat? A study of ordinals vs. degree modifiers in nested definites"
+- - title: "Is there a superlative rabbit in the ordinal hat? A study of ordinals vs. degree modifiers in nested definites"
   authors:
     - Elizabeth Coppock
     - David Beaver
     - Wilder Perkins
     - Emily Richardson
   year: 2025
-  journal: "Experiments in Linguistic Meaning"
-  volume: 3
+  book: "Proceedings of Experiments in Linguistic Meaning 3 (ELM 3)"
+  editors:
+    - Tyler Knowlton
+    - Florian Schwarz
+    - Anna Papafragou
+  publisher: "University of Pennsylvania"
+  location: "Philadelphia, PA"
   pages: "117–129"
-  type: journal-article
+  type: conference-paper
   themes: ["Formal Semantics", "Information Structure"]
-  link: https://doi.org/10.3765/elm.3.3000  # Replace with real DOI if available
-
+  link: https://doi.org/10.3765/elm.3.3000  # update if final DOI differs
 - title: "Do *they* mean ‘us’? Interpreting Referring Expression variation under Intergroup Bias"
   authors:
     - Venkata S. Govindarajan
