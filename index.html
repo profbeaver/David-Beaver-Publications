@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>David Beaver – Publications</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; max-width: 900px; }
+    h1 { font-size: 2em; }
+    .pub-entry { margin-bottom: 1em; }
+    .pub-type { font-style: italic; color: #555; }
+    a { color: #0645AD; text-decoration: none; }
+    .error { color: red; margin-top: 1em; }
+    #filter { margin: 1em 0; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+</head>
+<body>
+<h1>David Beaver – Publications</h1>
+<label for="filter">Show type:</label>
+<select id="filter">
+  <option value="all">All</option>
+</select>
+<div id="pubs"></div>
+<div id="error" class="error"></div>
+
+<script>
+window.onload = () => {
+  fetch('publications_links_cleaned.yaml')
+    .then(response => {
+      if (!response.ok) throw new Error('Failed to load YAML file. Check the file name and path.');
+      return response.text();
+    })
+    .then(text => {
+      const data = window.jsyaml.load(text);
+      const container = document.getElementById('pubs');
+      const select = document.getElementById('filter');
+
+      data.sort((a, b) => (b.year || 0) - (a.year || 0));
+
+      const types = new Set(data.map(pub => pub.type));
+      [...types].sort().forEach(type => {
+        const option = document.createElement('option');
+        option.value = type;
+        option.textContent = type.replace(/-/g, ' ');
+        select.appendChild(option);
+      });
+
+      function render(filterType) {
+        container.innerHTML = '';
+        const filtered = filterType === 'all' ? data : data.filter(pub => pub.type === filterType);
+        filtered.forEach(pub => {
+          const div = document.createElement('div');
+          div.className = 'pub-entry';
+          div.innerHTML = `
+            <strong>${pub.title}</strong><br>
+            ${pub.authors?.join(', ')} (${pub.year || 'n.d.'})<br>
+            <span class="pub-type">[${pub.type.replace(/-/g, ' ')}]</span>
+            ${pub.link ? ` <a href="${pub.link}" target="_blank">[Link]</a>` : ''}
+          `;
+          container.appendChild(div);
+        });
+      }
+
+      render('all');
+      select.addEventListener('change', e => render(e.target.value));
+    })
+    .catch(error => {
+      document.getElementById('error').textContent = 'Error: ' + error.message;
+    });
+};
+</script>
+</body>
+</html>
