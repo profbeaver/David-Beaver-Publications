@@ -1,3 +1,32 @@
+- title: "Is there a superlative rabbit in the ordinal hat? A study of ordinals vs. degree modifiers in nested definites"
+  authors:
+    - Elizabeth Coppock
+    - David Beaver
+    - Wilder Perkins
+    - Emily Richardson
+  year: 2025
+  journal: "Experiments in Linguistic Meaning"
+  volume: 3
+  pages: "117–129"
+  type: journal-article
+  themes: ["Formal Semantics", "Information Structure"]
+  link: https://doi.org/10.3765/elm.3.3000  # Replace with real DOI if available
+
+- title: "Do *they* mean ‘us’? Interpreting Referring Expression variation under Intergroup Bias"
+  authors:
+    - Venkata S. Govindarajan
+    - Matianyu Zang
+    - Kyle Mahowald
+    - David Beaver
+    - Junyi Jessy Li
+  year: 2024
+  book: "Findings of the Association for Computational Linguistics: EMNLP 2024"
+  publisher: "Association for Computational Linguistics"
+  pages: "9772–9785"
+  location: "Miami, Florida, USA"
+  type: conference-paper
+  themes: ["Social & Political Language", "Computational & Corpus Linguistics", "Pragmatics"]
+  link: https://aclanthology.org/2024.findings-emnlp.850  # replace with confirmed if different
 - type: book
   title: The Politics of Language
   authors:
