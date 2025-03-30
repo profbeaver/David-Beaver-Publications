@@ -54,6 +54,7 @@
     a { color: #BF5700; text-decoration: none; }
     a:hover { text-decoration: underline; }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
 </head>
 <body>
   <header>
@@ -85,90 +86,87 @@
   <div id="pubs"></div>
   <div id="error" class="error"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js" onload="initPage()" defer></script>
   <script>
-    function initPage() {
-      window.addEventListener('DOMContentLoaded', () => {
-        const typeSelect = document.getElementById('typeFilter');
-        const themeSelect = document.getElementById('themeFilter');
-        const yearSelect = document.getElementById('yearFilter');
-        const container = document.getElementById('pubs');
+    window.addEventListener('load', () => {
+      const typeSelect = document.getElementById('typeFilter');
+      const themeSelect = document.getElementById('themeFilter');
+      const yearSelect = document.getElementById('yearFilter');
+      const container = document.getElementById('pubs');
 
-        fetch('publications_links_cleaned.yaml')
-          .then(res => {
-            if (!res.ok) throw new Error('YAML file could not be loaded.');
-            return res.text();
-          })
-          .then(text => {
-            const data = jsyaml.load(text);
-            data.sort((a, b) => (b.year || 0) - (a.year || 0));
+      fetch('publications_links_cleaned.yaml')
+        .then(res => {
+          if (!res.ok) throw new Error('YAML file could not be loaded.');
+          return res.text();
+        })
+        .then(text => {
+          const data = jsyaml.load(text);
+          data.sort((a, b) => (b.year || 0) - (a.year || 0));
 
-            const types = [...new Set(data.map(d => d.type))];
-            types.forEach(t => {
-              const opt = document.createElement('option');
-              opt.value = t;
-              opt.textContent = t.replace(/-/g, ' ');
-              typeSelect.appendChild(opt);
-            });
-
-            const themes = [...new Set(data.flatMap(d => d.themes || []))];
-            themes.forEach(t => {
-              const opt = document.createElement('option');
-              opt.value = t;
-              opt.textContent = t;
-              themeSelect.appendChild(opt);
-            });
-
-            const render = () => {
-              const type = typeSelect.value;
-              const theme = themeSelect.value;
-              const year = yearSelect.value;
-              const thisYear = new Date().getFullYear();
-
-              container.innerHTML = '';
-              data.filter(pub => {
-                const typeMatch = type === 'all' || pub.type === type;
-                const themeMatch = theme === 'all' || (pub.themes && pub.themes.includes(theme));
-                const yearMatch = year === 'all' || (!isNaN(pub.year) && pub.year >= thisYear - 4);
-                return typeMatch && themeMatch && yearMatch;
-              }).forEach(pub => {
-                const div = document.createElement('div');
-                div.className = 'pub-entry';
-                let html = `<strong>${pub.title}</strong><br>${pub.authors?.join(', ')} (${pub.year || 'n.d.'}).`;
-                if (pub.journal) {
-                  html += ` <em>${pub.journal}</em>`;
-                  if (pub.volume) html += ` ${pub.volume}`;
-                  if (pub.issue) html += `(${pub.issue})`;
-                  if (pub.pages) html += `, ${pub.pages}`;
-                  html += '.';
-                } else if (pub.book) {
-                  html += ` In <em>${pub.book}</em>`;
-                  if (pub.editors) html += `, eds. ${pub.editors.join(', ')}`;
-                  if (pub.publisher) html += `, ${pub.publisher}`;
-                  if (pub.pages) html += `, pp. ${pub.pages}`;
-                  html += '.';
-                } else if (pub.source) {
-                  html += ` <em>${pub.source}</em>`;
-                  if (pub.date) html += `, ${pub.date}`;
-                  html += '.';
-                } else if (pub.publisher) {
-                  html += ` ${pub.publisher}.`;
-                }
-                html += ` <span class="pub-type">[${pub.type?.replace(/-/g, ' ')}]</span>`;
-                if (pub.link) html += ` <a href="${pub.link}" target="_blank">[Link]</a>`;
-                div.innerHTML = html;
-                container.appendChild(div);
-              });
-            };
-
-            typeSelect.onchange = themeSelect.onchange = yearSelect.onchange = render;
-            render();
-          })
-          .catch(err => {
-            document.getElementById('error').textContent = 'Error: ' + err.message;
+          const types = [...new Set(data.map(d => d.type))];
+          types.forEach(t => {
+            const opt = document.createElement('option');
+            opt.value = t;
+            opt.textContent = t.replace(/-/g, ' ');
+            typeSelect.appendChild(opt);
           });
-      });
-    }
+
+          const themes = [...new Set(data.flatMap(d => d.themes || []))];
+          themes.forEach(t => {
+            const opt = document.createElement('option');
+            opt.value = t;
+            opt.textContent = t;
+            themeSelect.appendChild(opt);
+          });
+
+          const render = () => {
+            const type = typeSelect.value;
+            const theme = themeSelect.value;
+            const year = yearSelect.value;
+            const thisYear = new Date().getFullYear();
+
+            container.innerHTML = '';
+            data.filter(pub => {
+              const typeMatch = type === 'all' || pub.type === type;
+              const themeMatch = theme === 'all' || (pub.themes && pub.themes.includes(theme));
+              const yearMatch = year === 'all' || (!isNaN(pub.year) && pub.year >= thisYear - 4);
+              return typeMatch && themeMatch && yearMatch;
+            }).forEach(pub => {
+              const div = document.createElement('div');
+              div.className = 'pub-entry';
+              let html = `<strong>${pub.title}</strong><br>${pub.authors?.join(', ')} (${pub.year || 'n.d.'}).`;
+              if (pub.journal) {
+                html += ` <em>${pub.journal}</em>`;
+                if (pub.volume) html += ` ${pub.volume}`;
+                if (pub.issue) html += `(${pub.issue})`;
+                if (pub.pages) html += `, ${pub.pages}`;
+                html += '.';
+              } else if (pub.book) {
+                html += ` In <em>${pub.book}</em>`;
+                if (pub.editors) html += `, eds. ${pub.editors.join(', ')}`;
+                if (pub.publisher) html += `, ${pub.publisher}`;
+                if (pub.pages) html += `, pp. ${pub.pages}`;
+                html += '.';
+              } else if (pub.source) {
+                html += ` <em>${pub.source}</em>`;
+                if (pub.date) html += `, ${pub.date}`;
+                html += '.';
+              } else if (pub.publisher) {
+                html += ` ${pub.publisher}.`;
+              }
+              html += ` <span class="pub-type">[${pub.type?.replace(/-/g, ' ')}]</span>`;
+              if (pub.link) html += ` <a href="${pub.link}" target="_blank">[Link]</a>`;
+              div.innerHTML = html;
+              container.appendChild(div);
+            });
+          };
+
+          typeSelect.onchange = themeSelect.onchange = yearSelect.onchange = render;
+          render();
+        })
+        .catch(err => {
+          document.getElementById('error').textContent = 'Error: ' + err.message;
+        });
+    });
   </script>
 </body>
 </html>
