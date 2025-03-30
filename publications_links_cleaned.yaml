@@ -1,0 +1,1162 @@
+- type: book
+  title: The Politics of Language
+  authors:
+  - David Beaver
+  - Jason Stanley
+  year: 2023
+  publisher: Princeton University Press
+  featured: true
+  themes:
+  - Social & Political Language
+  - Ideology
+  - Philosophy of Language
+- type: book
+  title: 'Sense and Sensitivity: How Focus Determines Meaning'
+  authors:
+  - David Beaver
+  - Brady Clark
+  year: 2008
+  publisher: Blackwell
+  themes:
+  - Information Structure
+  - Focus
+  - Formal Semantics
+- type: book
+  title: Presupposition and Assertion in Dynamic Semantics
+  authors:
+  - David Beaver
+  year: 2001
+  publisher: CSLI Publications
+  themes:
+  - Presupposition
+  - Formal Semantics
+  - Philosophy of Language
+- type: edited-volume
+  title: The Construction of Meaning
+  authors:
+  - David Beaver
+  - Luis Casillas
+  - Brady Clark
+  - Stefan Kaufmann
+  year: 2002
+  publisher: CSLI Publications
+  themes:
+  - Formal Semantics
+  - Philosophy of Language
+- type: edited-volume
+  title: Words, Proofs and Diagrams
+  authors:
+  - David Barker-Plummer
+  - David Beaver
+  - Johan van Benthem
+  - Patrick Scotto di Luzio
+  year: 2002
+  publisher: CSLI Publications
+  themes:
+  - Philosophy of Language
+  - Logic
+- type: article
+  title: '“We’re running out of fuel”: When does miscommunication go unrepaired?'
+  authors:
+  - Chi He Elder
+  - David Beaver
+  year: 2022
+  journal: Intercultural Pragmatics
+  volume: '19'
+  issue: '5'
+  pages: 541–570
+  doi: 10.1515/ip-2022-5001
+  themes:
+  - Pragmatics
+  - Language & Cognition
+- type: article
+  title: Neutrality
+  authors:
+  - David Beaver
+  - Jason Stanley
+  year: 2021
+  journal: Philosophical Topics
+  volume: '49'
+  issue: '1'
+  pages: 165–185
+  themes:
+  - Social & Political Language
+  - Philosophy of Language
+- type: article
+  title: It's not what you expected! The surprising nature of cleft alternatives in French and English
+  authors:
+  - Emilie Destruel
+  - David Beaver
+  - Elizabeth Coppock
+  year: 2019
+  journal: Frontiers in Psychology
+  volume: '10'
+  pages: '1400'
+  doi: 10.3389/fpsyg.2019.01400
+  themes:
+  - Information Structure
+  - Pragmatics
+- type: article
+  title: Toward a Non-Ideal Philosophy of Language
+  authors:
+  - David Beaver
+  - Jason Stanley
+  year: 2018
+  journal: Graduate Faculty Philosophy Journal
+  volume: '39'
+  issue: '2'
+  pages: 503–547
+  themes:
+  - Social & Political Language
+  - Philosophy of Language
+  link: https://cpb-us-w2.wpmucdn.com/campuspress.yale.edu/dist/7/272/files/2019/01/Beaver-Stanley-Final-Proofs-1qh2r2l.pdf
+- type: article
+  title: How projective is projective content? Gradience in projectivity and at-issueness
+  authors:
+  - Judith Tonhauser
+  - David Beaver
+  - Judith Degen
+  year: 2018
+  journal: Journal of Semantics
+  volume: '35'
+  issue: '3'
+  pages: 495–542
+  themes:
+  - Presupposition
+  - Pragmatics
+  - Formal Semantics
+  link: https://academic.oup.com/jos/article-pdf/35/3/495/27083965/ffy007.pdf
+- type: article
+  title: 'Reproducible research in linguistics: A position statement on data citation and attribution
+    in our field'
+  authors:
+  - Andrea L. Berez-Kroeker
+  - Lauren Gawne
+  - Susan Smythe Kung
+  - Barbara Kelly
+  - Tyler Heston
+  - Gary Holton
+  - Peter Pulsifer
+  - David Beaver
+  - Shobhana Chelliah
+  - Stanley Dubinsky
+  - Richard P. Meier
+  - Nicholas Thieberger
+  - Keren Rice
+  - Anthony Woodbury
+  year: 2018
+  journal: Linguistics
+  volume: '56'
+  issue: '1'
+  pages: 1–18
+  themes:
+  - Computational & Corpus Linguistics
+  link: https://www.degruyter.com/view/j/ling.2018.56.issue-1/ling-2017-0032/ling-2017-0032.xml
+- type: article
+  title: 'Questions Under Discussion: Where Information Structure Meets Projective Content'
+  authors:
+  - David Beaver
+  - Craige Roberts
+  - Mandy Simons
+  - Judith Tonhauser
+  year: 2017
+  journal: Annual Review of Linguistics
+  volume: '3'
+  pages: 265–284
+  themes:
+  - Information Structure
+  - Presupposition
+  - Formal Semantics
+  link: https://doi.org/10.1146/annurev-linguistics-011516-033952
+- type: article
+  title: 'The Best Question: Explaining the Projection Behavior of Factives'
+  authors:
+  - Mandy Simons
+  - David Beaver
+  - Craige Roberts
+  - Judith Tonhauser
+  year: 2017
+  journal: Discourse Processes
+  volume: '54'
+  issue: '3'
+  pages: 187–206
+  themes:
+  - Presupposition
+  - Formal Semantics
+  link: https://www.tandfonline.com/doi/pdf/10.1080/0163853X.2016.1150660
+- type: article
+  title: Semantics
+  authors:
+  - David Beaver
+  - Joey Frazee
+  year: 2016
+  journal: The Oxford Handbook of Computational Linguistics (Online Edition)
+  publisher: Oxford University Press
+  themes:
+  - Computational & Corpus Linguistics
+  - Formal Semantics
+- type: article
+  title: Definiteness and Determinacy
+  authors:
+  - Elizabeth Coppock
+  - David Beaver
+  year: 2015
+  journal: Linguistics and Philosophy
+  volume: '38'
+  issue: '5'
+  pages: 377–435
+  themes:
+  - Formal Semantics
+  - Definiteness
+  link: https://link.springer.com/content/pdf/10.1007%2Fs10988-015-9178-8.pdf
+- type: article
+  title: 'When Small Words Foretell Academic Success: The Case of College Admissions Essays'
+  authors:
+  - James W. Pennebaker
+  - Cindy K. Chung
+  - Joey Frazee
+  - Gary Lavergne
+  - David Beaver
+  year: 2014
+  journal: PLoS ONE
+  volume: '9'
+  issue: '12'
+  pages: e115844
+  doi: 10.1371/journal.pone.0115844
+  themes:
+  - Computational & Corpus Linguistics
+  - Language & Cognition
+  link: https://doi.org/10.1371/journal.pone.0115844
+- type: article
+  title: Principles of the Exclusive Muddle
+  authors:
+  - Elizabeth Coppock
+  - David Beaver
+  year: 2013
+  journal: Journal of Semantics
+  doi: 10.1093/jos/fft007
+  themes:
+  - Formal Semantics
+  - Focus
+  link: https://doi.org/10.1093/jos/fft007
+- type: article
+  title: Towards a taxonomy of projective content
+  authors:
+  - Judith Tonhauser
+  - David Beaver
+  - Craige Roberts
+  - Mandy Simons
+  year: 2013
+  journal: Language
+  volume: '89'
+  issue: '1'
+  pages: 66–109
+  themes:
+  - Presupposition
+  - Pragmatics
+- type: article
+  title: 'Review: The Expression of Information Structure'
+  authors:
+  - Emilie Destruel
+  - David Beaver
+  year: 2013
+  journal: Language
+  volume: '89'
+  issue: '3'
+  pages: 647–653
+  themes:
+  - Information Structure
+- type: article
+  title: The communicative significance of primary and secondary accents
+  authors:
+  - David Beaver
+  - Leah Velleman
+  year: 2011
+  journal: Lingua
+  volume: '121'
+  issue: '11'
+  pages: 1671–1692
+  doi: 10.1016/j.lingua.2011.04.004
+  themes:
+  - Prosody
+  - Information Structure
+  link: https://doi.org/10.1016/j.lingua.2011.04.004
+- type: article
+  title: 'The NXT-format Switchboard Corpus: A Rich Resource for Investigating the Syntax, Semantics,
+    Pragmatics and Prosody of Dialogue'
+  authors:
+  - Sasha Calhoun
+  - Jean Carletta
+  - Jason Brenier
+  - Neil Mayo
+  - Dan Jurafsky
+  - Mark Steedman
+  - David Beaver
+  year: 2010
+  journal: Language Resources and Evaluation
+  themes:
+  - Computational & Corpus Linguistics
+- type: article
+  title: 'Social Language Processing: A Framework for Analyzing the Communication of Terrorists and Authoritarian
+    Regimes'
+  authors:
+  - Jeff Hancock
+  - David Beaver
+  - Cindy K. Chung
+  - Joey Frazee
+  - James W. Pennebaker
+  - Art Graesser
+  - Zhiqiang Cai
+  year: 2010
+  journal: Behavioral Sciences of Terrorism and Political Aggression
+  volume: '2'
+  issue: '2'
+  pages: 108–132
+  themes:
+  - Social & Political Language
+  - Computational & Corpus Linguistics
+  link: https://blogs.cornell.edu/socialmedialab/files/2013/12/Social-language-processing.pdf
+- type: article
+  title: As brief as possible (but no briefer)
+  authors:
+  - David Beaver
+  year: 2008
+  journal: Theoretical Linguistics
+  volume: '34'
+  issue: '3'
+  pages: 213–228
+  themes:
+  - Pragmatics
+  - Information Structure
+- type: article
+  title: The Optimization of Discourse Anaphora
+  authors:
+  - David Beaver
+  year: 2004
+  journal: Linguistics and Philosophy
+  volume: '27'
+  issue: '1'
+  pages: 3–56
+  themes:
+  - Information Structure
+  - Formal Semantics
+- type: article
+  title: Five Only Pieces
+  authors:
+  - David Beaver
+  year: 2004
+  journal: Theoretical Linguistics
+  volume: '30'
+  pages: 45–64
+  themes:
+  - Focus
+  - Formal Semantics
+- type: article
+  title: 'Always and Only: Why not all Focus Sensitive Operators are Alike'
+  authors:
+  - Brady Clark
+  - David Beaver
+  year: 2003
+  journal: Natural Language Semantics
+  volume: '11'
+  issue: '4'
+  pages: 323–362
+  themes:
+  - Focus
+  - Formal Semantics
+- type: article
+  title: A Partial Account of Presupposition Projection
+  authors:
+  - David Beaver
+  - Emiel Krahmer
+  year: 2001
+  journal: Journal of Logic, Language and Information
+  volume: '10'
+  issue: '2'
+  pages: 147–182
+  themes:
+  - Presupposition
+  - Formal Semantics
+- type: article
+  title: An Infinite Number of Monkeys
+  authors:
+  - David Beaver
+  year: 1994
+  journal: Acta Linguistica Hungarica
+  volume: '42'
+  issue: '3'
+  pages: 253–270
+  themes:
+  - Presupposition
+  - Formal Semantics
+- type: handbook-chapter
+  title: Linguistic Accommodation (Annotated Bibliography)
+  authors:
+  - Kristin Denlinger
+  - David Beaver
+  year: 2022
+  book: Oxford Bibliographies
+  publisher: Oxford University Press
+  themes:
+  - Pragmatics
+  - Philosophy of Language
+- type: handbook-chapter
+  title: Presupposition and Negation
+  authors:
+  - Kristin Denlinger
+  - David Beaver
+  year: 2021
+  book: The Oxford Handbook of Negation
+  publisher: Oxford University Press
+  themes:
+  - Presupposition
+  - Formal Semantics
+- type: handbook-chapter
+  title: Presupposition
+  authors:
+  - David Beaver
+  - Bart Geurts
+  year: 2021
+  book: Stanford Encyclopedia of Philosophy
+  themes:
+  - Presupposition
+  - Philosophy of Language
+  - Formal Semantics
+- type: handbook-chapter
+  title: Question-based models of information structure
+  authors:
+  - Laura Velleman
+  - David Beaver
+  year: 2016
+  book: The Handbook of Information Structure
+  publisher: Oxford University Press
+  themes:
+  - Information Structure
+  - Formal Semantics
+- type: handbook-chapter
+  title: Semantics
+  authors:
+  - David Beaver
+  - Joey Frazee
+  year: 2015
+  book: The Oxford Handbook of Computational Linguistics (2nd ed.)
+  publisher: Oxford University Press
+  themes:
+  - Formal Semantics
+  - Computational & Corpus Linguistics
+- type: handbook-chapter
+  title: Presupposition
+  authors:
+  - David Beaver
+  - Bart Geurts
+  year: 2012
+  book: 'Semantics: An International Handbook of Natural Language Meaning, vol. 3'
+  publisher: de Gruyter Mouton
+  themes:
+  - Presupposition
+  - Formal Semantics
+- type: handbook-chapter
+  title: Presupposition
+  authors:
+  - David Beaver
+  - Bart Geurts
+  year: 2011
+  book: Stanford Encyclopedia of Philosophy
+  themes:
+  - Presupposition
+  - Philosophy of Language
+- type: handbook-chapter
+  title: Discourse Representation Theory
+  authors:
+  - Bart Geurts
+  - David Beaver
+  year: 2008
+  book: Stanford Encyclopedia of Philosophy
+  themes:
+  - Formal Semantics
+  - Philosophy of Language
+- type: handbook-chapter
+  title: Accommodation
+  authors:
+  - David Beaver
+  - Henk Zeevat
+  year: 2007
+  book: Oxford Handbook of Linguistic Interfaces
+  publisher: Oxford University Press
+  themes:
+  - Presupposition
+  - Pragmatics
+- type: handbook-chapter
+  title: Presupposition
+  authors:
+  - David Beaver
+  year: 1997
+  book: The Handbook of Logic and Language
+  publisher: Elsevier
+  themes:
+  - Presupposition
+  - Formal Semantics
+  - Philosophy of Language
+- type: conference-paper
+  title: Counterfactual Probing for the Influence of Affect and Specificity on Intergroup Bias
+  authors:
+  - Venkata S. Govindarajan
+  - David Beaver
+  - Jason J. Li
+  year: 2023
+  book: 'Findings of the Association for Computational Linguistics: ACL 2023'
+  pages: 12853–12862
+  themes:
+  - Computational & Corpus Linguistics
+  - Social & Political Language
+- type: conference-paper
+  title: 'How people talk about each other: Modeling Generalized Intergroup Bias and Emotion'
+  authors:
+  - Venkata S. Govindarajan
+  - Jason J. Li
+  - David Beaver
+  year: 2023
+  book: Proceedings of the 17th Conference of the European Chapter of the ACL
+  pages: 2496–2506
+  themes:
+  - Computational & Corpus Linguistics
+  - Social & Political Language
+- type: conference-paper
+  title: 'Raising hell: On the hyper-projectivity of slurs'
+  authors:
+  - David Beaver
+  - Jason Stanley
+  year: 2022
+  book: Proceedings of the 23rd Amsterdam Colloquium
+  pages: 1–8
+  themes:
+  - Social & Political Language
+  - Pragmatics
+- type: book-chapter
+  title: Beware of “Snakes”, “Invaders”, and other fighting words
+  authors:
+  - Jason Stanley
+  - David Beaver
+  year: 2022
+  book: 'Question Everything: A Stone Reader'
+  publisher: Liveright
+  pages: 139–142
+  themes:
+  - Social & Political Language
+  - Philosophy of Language
+- type: conference-paper
+  title: Novelty and Familiarity for Free
+  authors:
+  - David Beaver
+  - Elizabeth Coppock
+  year: 2015
+  book: Proceedings of the 2015 Amsterdam Colloquium
+  publisher: Institute for Logic, Language, and Computation
+  pages: 50–59
+  themes:
+  - Information Structure
+  - Formal Semantics
+  link: https://utexas.box.com/s/53eazbxrvozrpkh9o1sdlzbd1yhekr2v
+- type: conference-paper
+  title: A Superlative Argument for a Minimal Theory of Definiteness
+  authors:
+  - Elizabeth Coppock
+  - David Beaver
+  year: 2014
+  book: Proceedings of Semantics and Linguistic Theory (SALT) 24
+  publisher: eLanguage.net
+  pages: 177–196
+  themes:
+  - Formal Semantics
+  - Definiteness
+  link: http://eecoppock.info/salt2014-final.pdf
+- type: book-chapter
+  title: Mere-ology
+  authors:
+  - Elizabeth Coppock
+  - David Beaver
+  year: 2013
+  book: Alternatives in Semantics
+  editor: Anamaria Falaus
+  publisher: Palgrave
+  pages: 150–173
+  themes:
+  - Formal Semantics
+  - Philosophy of Language
+  link: http://eecoppock.info/Mere-ology1.pdf
+- type: book-chapter
+  title: Semantics and Pragmatics
+  authors:
+  - David Beaver
+  - Justin Cope
+  - Kai von Fintel
+  year: 2013
+  book: L’interface langage-cognition / The Language-Cognition Interface
+  editors:
+  - Stephen Anderson
+  - Jacques Moeschler
+  - François Reboul
+  publisher: Librarie Droz
+  themes:
+  - Formal Semantics
+  - Philosophy of Language
+- type: conference-paper
+  title: Sole Sisters
+  authors:
+  - Elizabeth Coppock
+  - David Beaver
+  year: 2012
+  book: Proceedings of Semantics and Linguistic Theory (SALT) 21
+  publisher: eLanguage
+  pages: 197–217
+  themes:
+  - Formal Semantics
+  - Definiteness
+  link: http://elanguage.net/journals/salt/article/view/21.197
+- type: conference-paper
+  title: It-clefts are IT (inquiry terminating) constructions
+  authors:
+  - Leah Velleman
+  - David Beaver
+  - Emilie Destruel
+  - Dylan Bumford
+  - Elizabeth Coppock
+  year: 2012
+  book: Proceedings of Semantics and Linguistic Theory (SALT) 22
+  publisher: eLanguage
+  pages: 441–460
+  themes:
+  - Information Structure
+  - Clefts
+  link: http://elanguage.net/journals/salt/article/view/22.441/3480
+- type: conference-paper
+  title: Exclusive Updates!
+  authors:
+  - Elizabeth Coppock
+  - David Beaver
+  year: 2012
+  book: Logic, Language and Meaning
+  editors:
+  - Maria Aloni
+  - Floris Roelofsen
+  - Galit Weidman Sassoon
+  - Katrin Schulz
+  - Viola Kimmelman
+  - Michael Westera
+  publisher: Springer
+  pages: 291–300
+  themes:
+  - Formal Semantics
+  - Focus
+  link: http://eecoppock.info/CoppockBeaver-ExclusiveUpdates.pdf
+- type: conference-paper
+  title: Exclusivity, Uniqueness and Definiteness
+  authors:
+  - Elizabeth Coppock
+  - David Beaver
+  year: 2012
+  book: Empirical Issues in Syntax and Semantics
+  editor: Christian Piñón
+  publisher: CSSP, Paris
+  pages: 59–76
+  themes:
+  - Formal Semantics
+  - Definiteness
+  link: http://eecoppock.info/eiss9_coppock-and-beaver.pdf
+- type: conference-paper
+  title: 'Weak Uniqueness: The only difference between definites and indefinites'
+  authors:
+  - Elizabeth Coppock
+  - David Beaver
+  year: 2012
+  book: Proceedings of Semantics and Linguistic Theory (SALT) 22
+  editor: Anca Chereches
+  publisher: eLanguage
+  pages: 527–544
+  themes:
+  - Formal Semantics
+  - Definiteness
+  link: http://elanguage.net/journals/salt/article/view/22.527/3569
+- type: conference-paper
+  title: Hungarian Focus is not Exhausted
+  authors:
+  - Edgar Onea
+  - David Beaver
+  year: 2011
+  book: Proceedings of Semantics and Linguistic Theory (SALT) 19
+  editors:
+  - Ed Cormany
+  - Satoshi Ito
+  - David Lutz
+  publisher: eLanguage
+  pages: 342–359
+  themes:
+  - Information Structure
+  - Focus
+- type: conference-paper
+  title: What projects and why
+  authors:
+  - Mandy Simons
+  - Judith Tonhauser
+  - David Beaver
+  - Craige Roberts
+  year: 2011
+  book: Proceedings of Semantics and Linguistic Theory (SALT) 20
+  editors:
+  - David Lutz
+  - Ning Li
+  publisher: CLC Publications, Cornell
+  pages: 309–327
+  themes:
+  - Presupposition
+  - Pragmatics
+- type: conference-paper
+  title: Investigating properties of projective meaning
+  authors:
+  - Craige Roberts
+  - Mandy Simons
+  - Judith Tonhauser
+  - David Beaver
+  year: 2009
+  book: Workshop on Projective Meanings
+  location: Ohio State University
+  themes:
+  - Presupposition
+  - Pragmatics
+- type: conference-paper
+  title: 'Addendum: Investigating properties of projective meaning'
+  authors:
+  - Craige Roberts
+  - Mandy Simons
+  - Judith Tonhauser
+  - David Beaver
+  year: 2009
+  book: Addendum to Workshop on Projective Meanings
+  location: Ohio State University
+  themes:
+  - Presupposition
+  - Pragmatics
+- type: book-chapter
+  title: Have you Noticed that your Belly Button Lint Colour is Related to the Colour of your Clothing?
+  authors:
+  - David Beaver
+  year: 2010
+  book: 'Presuppositions and Discourse: Essays offered to Hans Kamp'
+  editors:
+  - Rainer Bäuerle
+  - Uwe Reyle
+  - Thomas E. Zimmermann
+  publisher: Elsevier
+  pages: 65–99
+  themes:
+  - Presupposition
+- type: book-chapter
+  title: The Puzzle of Ambiguity
+  authors:
+  - Thomas Wasow
+  - David Beaver
+  - Amy Perfors
+  year: 2005
+  book: Essays in Honor of Steve Lapointe
+  editor: Peter Sells
+  publisher: CSLI Publications
+  themes:
+  - Formal Semantics
+  - Ambiguity
+- type: conference-paper
+  title: 'Bad Subject: (Non-)Canonicality and NP Distribution in Existentials'
+  authors:
+  - Itamar Francez
+  - David Beaver
+  - Dmitry Levinson
+  year: 2005
+  book: Proceedings of Semantics and Linguistic Theory XV
+  editors:
+  - Emily Georgala
+  - Jonathan Howell
+  publisher: CLC Publications, Cornell
+  themes:
+  - Syntax
+  - Information Structure
+- type: conference-paper
+  title: The (non)Utility of Linguistic Features for Predicting Prominence in Spontaneous Speech
+  authors:
+  - Jason Brenier
+  - Ani Nenkova
+  - Anubha Kothari
+  - Lauren Whitton
+  - Dan Jurafsky
+  - David Beaver
+  year: 2006
+  book: Proceedings of IEEE/ACL 2006 Workshop on Spoken Language Technology
+  themes:
+  - Computational & Corpus Linguistics
+  - Prosody
+- type: conference-paper
+  title: 'To Memorize or to Predict: Prominence labeling in Conversational Speech'
+  authors:
+  - Ani Nenkova
+  - Jason Brenier
+  - Anubha Kothari
+  - Dan Jurafsky
+  - Stefan Calhoun
+  - Lauren Whitton
+  - David Beaver
+  year: 2007
+  book: Proceedings of NAACL-HLT 2007
+  themes:
+  - Computational & Corpus Linguistics
+  - Prosody
+- type: conference-paper
+  title: 'When Semantics Meets Phonetics: Acoustical Studies of Second Occurrence Focus'
+  authors:
+  - Brady Clark
+  - David Beaver
+  - Edward Flemming
+  - T. Florian Jaeger
+  - Maria Wolters
+  year: 2007
+  journal: Language
+  volume: '83'
+  issue: '2'
+  themes:
+  - Information Structure
+  - Focus
+  - Prosody
+- type: book-chapter
+  title: The Dynamics of Topic and Focus
+  authors:
+  - Maria Aloni
+  - David Beaver
+  - Brady Clark
+  - Robert van Rooij
+  year: 2007
+  book: Questions in Dynamic Semantics
+  editors:
+  - Maria Aloni
+  - Alastair Butler
+  - Paul Dekker
+  publisher: Elsevier
+  pages: 123–145
+  themes:
+  - Information Structure
+  - Formal Semantics
+- type: conference-paper
+  title: On the logic of verbal modification
+  authors:
+  - David Beaver
+  - Cleo Condoravdi
+  year: 2007
+  book: Proceedings of the Sixteenth Amsterdam Colloquium
+  publisher: ILLC/Department of Philosophy University of Amsterdam
+  pages: 3–9
+  themes:
+  - Formal Semantics
+- type: book-chapter
+  title: Input-Output Mismatches in OT
+  authors:
+  - David Beaver
+  - Hanjung Lee
+  year: 2004
+  book: Optimality Theory and Pragmatics
+  editors:
+  - Reinhard Blutner
+  - Henk Zeevat
+  publisher: Palgrave/Macmillan
+  pages: 112–153
+  themes:
+  - Formal Semantics
+  - Pragmatics
+- type: book-chapter
+  title: Accommodating Topics
+  authors:
+  - David Beaver
+  year: 2004
+  book: Context-Dependence in the Analysis of Linguistic Meaning
+  editors:
+  - Hans Kamp
+  - Barbara H. Partee
+  publisher: Elsevier
+  pages: 79–90
+  themes:
+  - Information Structure
+  - Presupposition
+- type: conference-paper
+  title: Form-Meaning Asymmetries and Bidirectional Optimization
+  authors:
+  - Hanjung Lee
+  - David Beaver
+  year: 2003
+  book: Variation within Optimality Theory
+  editors:
+  - J. Spenader
+  - A. Eriksson
+  - Östen Dahl
+  publisher: University of Stockholm
+  pages: 138–148
+  themes:
+  - Formal Semantics
+- type: conference-paper
+  title: A Uniform Analysis of Before and After
+  authors:
+  - David Beaver
+  - Cleo Condoravdi
+  year: 2003
+  book: Proceedings of SALT XIII
+  editors:
+  - Rob Young
+  - Yuping Zhou
+  publisher: CLC Publications, Cornell
+  pages: 37–54
+  themes:
+  - Formal Semantics
+  - Temporal Semantics
+- type: conference-paper
+  title: Monotonicity and Focus Sensitivity
+  authors:
+  - David Beaver
+  - Brady Clark
+  year: 2002
+  book: Proceedings of SALT XII
+  editor: Brendan Jackson
+  publisher: CLC Publications, Cornell
+  themes:
+  - Focus
+  - Formal Semantics
+- type: conference-paper
+  title: The Proper Treatments of Focus Sensitivity
+  authors:
+  - David Beaver
+  - Brady Clark
+  year: 2002
+  book: Proceedings of WCCFL XXI
+  editors:
+  - Chris Potts
+  - Lisa Mikkelsen
+  publisher: Cascadilla Press
+  pages: 15–28
+  themes:
+  - Focus
+  - Formal Semantics
+- type: book-chapter
+  title: Presupposition in DRT
+  authors:
+  - David Beaver
+  year: 2002
+  book: The Construction of Meaning
+  editors:
+  - David Beaver
+  - Luis Casillas
+  - Brady Clark
+  - Stefan Kaufmann
+  publisher: CSLI Publications
+  pages: 23–43
+  themes:
+  - Presupposition
+  - Formal Semantics
+- type: book-chapter
+  title: Pragmatics, and That's an Order
+  authors:
+  - David Beaver
+  year: 2002
+  book: Logic, Language and Visual Information
+  editors:
+  - David Barker-Plummer
+  - David Beaver
+  - Johan van Benthem
+  - Patrick Scotto di Luzio
+  publisher: CSLI Publications
+  pages: 191–215
+  themes:
+  - Pragmatics
+  - Philosophy of Language
+- type: conference-paper
+  title: Local Satisfaction Preferred
+  authors:
+  - David Beaver
+  year: 1996
+  book: Proceedings of the Tenth Amsterdam Colloquium
+  editors:
+  - Paul Dekker
+  - Martin Stokhof
+  publisher: ILLC, Amsterdam
+  pages: 57–72
+  themes:
+  - Presupposition
+  - Formal Semantics
+- type: conference-paper
+  title: The Logic of Anaphora Resolution
+  authors:
+  - David Beaver
+  year: 1999
+  book: Proceedings of the Twelfth Amsterdam Colloquium
+  editor: Paul Dekker
+  publisher: ILLC, Amsterdam
+  pages: 55–60
+  themes:
+  - Anaphora
+  - Formal Semantics
+- type: conference-paper
+  title: Topic and Focus Sensitivity
+  authors:
+  - Maria Aloni
+  - David Beaver
+  - Brady Clark
+  year: 1999
+  book: Proceedings of the Twelfth Amsterdam Colloquium
+  editor: Paul Dekker
+  publisher: ILLC, Amsterdam
+  pages: 61–66
+  themes:
+  - Information Structure
+  - Focus
+- type: book-chapter
+  title: 'Presupposition Accommodation: A Plea for Common Sense'
+  authors:
+  - David Beaver
+  year: 1999
+  book: Logic, Language and Computation, vol. 2
+  editors:
+  - Lawrence Moss
+  - Jonathan Ginzburg
+  - Maarten de Rijke
+  publisher: CSLI Publications
+  pages: 21–44
+  themes:
+  - Presupposition
+- type: conference-paper
+  title: When Variables Don't Vary Enough
+  authors:
+  - David Beaver
+  year: 1994
+  book: Proceedings of Semantics and Linguistic Theory IV
+  editors:
+  - Martha Harvey
+  - Lynn Santelmann
+  publisher: CLC Publications, Cornell
+  pages: 35–60
+  themes:
+  - Formal Semantics
+- type: conference-paper
+  title: The Kinematics of Presupposition
+  authors:
+  - David Beaver
+  year: 1992
+  book: Proceedings of the Eighth Amsterdam Colloquium
+  editors:
+  - Paul Dekker
+  - Martin Stokhof
+  publisher: ILLC, Amsterdam
+  pages: 17–36
+  themes:
+  - Presupposition
+  - Formal Semantics
+- type: book-chapter
+  title: Words, Proofs and Diagrams (Introduction)
+  authors:
+  - David Barker-Plummer
+  - David Beaver
+  - Johan van Benthem
+  - Patrick Scotto di Luzio
+  year: 2002
+  book: Words, Proofs and Diagrams
+  publisher: CSLI Publications
+  themes:
+  - Philosophy of Language
+  - Logic
+- type: book-chapter
+  title: Pragmatics (to a First Approximation)
+  authors:
+  - David Beaver
+  year: 1999
+  book: JFAK—Essays Dedicated to Johan van Benthem
+  editors:
+  - Jelle Gerbrandy
+  - Maarten Marx
+  - Maarten de Rijke
+  - Yde Venema
+  publisher: Vossiuspers, Amsterdam University Press
+  themes:
+  - Pragmatics
+- type: media
+  title: Did Trump Incite Violence? To Scholars of Propaganda, There's a Mountain of Evidence
+  authors:
+  - David Beaver
+  - Jason Stanley
+  year: 2021
+  source: Newsweek Magazine
+  date: February 9, 2021
+- type: media
+  title: Interview on Charles Adler Tonight (CBC)
+  authors:
+  - David Beaver
+  year: 2019
+  source: Canadian Broadcasting Corporation
+  date: May 17, 2019
+  link: https://bit.ly/2kejBR9
+- type: media
+  title: Beware of 'Snakes,' 'Invaders' and Other Fighting Words
+  authors:
+  - Jason Stanley
+  - David Beaver
+  year: 2019
+  source: New York Times (Opinion)
+  date: May 16, 2019
+- type: media
+  title: Unlike all previous U.S. presidents, Trump almost never mentions democratic ideals
+  authors:
+  - David Beaver
+  - Jason Stanley
+  year: 2017
+  source: The Monkey Cage, Washington Post
+  date: February 7, 2017
+- type: media
+  title: Interview on national Japanese public television (NHK)
+  authors:
+  - David Beaver
+  year: 2017
+  source: NHK
+  date: November 4, 2017
+  link: https://www9.nhk.or.jp/nw9/digest/2017/11/1103.html
+- type: media
+  title: Inside the fairy tale mind of Trump
+  authors:
+  - 'Jack Allsop (quoted: David Beaver)'
+  year: 2017
+  source: Columbia Journalism Review
+  date: September 27, 2017
+- type: media
+  title: How Trump's speaking style drives home his message
+  authors:
+  - 'Quoted: David Beaver'
+  year: 2017
+  source: Philadelphia Inquirer
+  date: January 26, 2017
+- type: media
+  title: Analyzing Application Essays
+  authors:
+  - 'Scott Jaschik (quoted: David Beaver)'
+  year: 2015
+  source: Inside Higher Ed
+  date: January 8, 2015
+- type: media
+  title: 'Twitterology: A New Science?'
+  authors:
+  - 'Ben Zimmer (quoted: David Beaver)'
+  year: 2011
+  source: New York Times
+  date: October 29, 2011
+- type: media
+  title: It's All Semantics
+  authors:
+  - 'Stephen Dubner (quoted: David Beaver)'
+  year: 2007
+  source: Freakonomics Blog, New York Times
+  date: August 16, 2007
+- type: media
+  title: 'We''re All Semanticists Now: Dr. Beaver''s Response'
+  authors:
+  - 'Stephen Dubner (quoted: David Beaver)'
+  year: 2007
+  source: Freakonomics Blog, New York Times
+  date: August 24, 2007
