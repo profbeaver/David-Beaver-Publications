@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>David Beaver – Publications</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 0; background-color: #f9f9f9; color: #222; }
+    header {
+      background: url('https://minio.la.utexas.edu/colaweb-prod/home/about-the-college/patton-hall-building/fourth_63.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 2em;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 { margin: 0; font-size: 2.2em; }
+    header img.logo { height: 48px; background: white; padding: 0.25em; border-radius: 6px; }
+    .intro {
+      padding: 2em;
+      display: flex;
+      align-items: center;
+      gap: 2em;
+      background-color: #fff3e6;
+    }
+    .intro img { max-height: 180px; border-radius: 12px; }
+    .intro .info { flex: 1; }
+    .intro .info p { margin-top: 0.5em; font-size: 1.1em; }
+    #controls {
+      margin: 2em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      align-items: center;
+    }
+    select {
+      font-size: 1em;
+      padding: 0.4em;
+    }
+    #pubs {
+      padding: 2em;
+    }
+    .pub-entry {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 1em;
+      margin-bottom: 1em;
+      border-left: 5px solid #BF5700;
+      box-shadow: 1px 1px 4px rgba(0,0,0,0.05);
+    }
+    .pub-type { font-style: italic; color: #666; }
+    .error { color: red; padding: 1em; }
+    a { color: #BF5700; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>David Beaver – Publications</h1>
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Texas_Longhorns_logo.svg" alt="UT Longhorns Logo">
+  </header>
+  <section class="intro">
+    <img src="headshot small.jpeg" alt="David Beaver">
+    <div class="info">
+      <h2>Professor of Linguistics and Philosophy</h2>
+      <p>Research on meaning, structure, and the social and political role of language.</p>
+    </div>
+    <img src="book cover.jpg" alt="The Politics of Language">
+  </section>
+
+  <div id="controls">
+    <label for="typeFilter">Type:</label>
+    <select id="typeFilter">
+      <option value="all">All</option>
+    </select>
+
+    <label for="themeFilter">Theme:</label>
+    <select id="themeFilter">
+      <option value="all">All</option>
+    </select>
+
+    <label for="yearFilter">Year:</label>
+    <select id="yearFilter">
+      <option value="recent">Recent (last 5 years)</option>
+      <option value="all">All Years</option>
+    </select>
+  </div>
+
+  <div id="pubs"></div>
+  <div id="error" class="error"></div>
+
+  <script>
+    window.onload = () => {
+      fetch('publications_links_cleaned.yaml')
+        .then(response => {
+          if (!response.ok) throw new Error('Failed to load YAML file. Check the file name and path.');
+          return response.text();
+        })
+        .then(text => {
+          const data = window.jsyaml.load(text);
+          const container = document.getElementById('pubs');
+          const typeSelect = document.getElementById('typeFilter');
+          const themeSelect = document.getElementById('themeFilter');
+          const yearSelect = document.getElementById('yearFilter');
+
+          data.sort((a, b) => (b.year || 0) - (a.year || 0));
+
+          const types = new Set(data.map(pub => pub.type));
+          const themes = new Set(data.flatMap(pub => pub.themes || []));
+
+          [...types].sort().forEach(type => {
+            const opt = document.createElement('option');
+            opt.value = type;
+            opt.textContent = type.replace(/-/g, ' ');
+            typeSelect.appendChild(opt);
+          });
+
+          [...themes].sort().forEach(theme => {
+            const opt = document.createElement('option');
+            opt.value = theme;
+            opt.textContent = theme;
+            themeSelect.appendChild(opt);
+          });
+
+          function render(typeFilter, themeFilter, yearFilter) {
+            container.innerHTML = '';
+            const thisYear = new Date().getFullYear();
+            const filtered = data.filter(pub => {
+              const matchType = typeFilter === 'all' || pub.type === typeFilter;
+              const matchTheme = themeFilter === 'all' || (pub.themes && pub.themes.includes(themeFilter));
+              const matchYear = yearFilter === 'all' || (!isNaN(pub.year) && pub.year >= thisYear - 4);
+              return matchType && matchTheme && matchYear;
+            });
+
+            filtered.forEach(pub => {
+              const div = document.createElement('div');
+              div.className = 'pub-entry';
+
+              let citation = `<strong>${pub.title}</strong><br>${pub.authors?.join(', ')} (${pub.year || 'n.d.'}).`;
+
+              if (pub.journal) {
+                citation += ` <em>${pub.journal}</em>`;
+                if (pub.volume) citation += ` ${pub.volume}`;
+                if (pub.issue) citation += `(${pub.issue})`;
+                if (pub.pages) citation += `, ${pub.pages}`;
+                citation += '.';
+              } else if (pub.book) {
+                citation += ` In <em>${pub.book}</em>`;
+                if (pub.editors) citation += `, eds. ${pub.editors.join(', ')}`;
+                if (pub.publisher) citation += `, ${pub.publisher}`;
+                if (pub.pages) citation += `, pp. ${pub.pages}`;
+                citation += '.';
+              } else if (pub.source) {
+                citation += ` <em>${pub.source}</em>`;
+                if (pub.date) citation += `, ${pub.date}`;
+                citation += '.';
+              } else if (pub.publisher) {
+                citation += ` ${pub.publisher}.`;
+              }
+
+              citation += ` <span class="pub-type">[${pub.type.replace(/-/g, ' ')}]</span>`;
+              if (pub.link) citation += ` <a href="${pub.link}" target="_blank">[Link]</a>`;
+
+              div.innerHTML = citation;
+              container.appendChild(div);
+            });
+          }
+
+          render(typeSelect.value, themeSelect.value, yearSelect.value);
+
+          typeSelect.addEventListener('change', () => render(typeSelect.value, themeSelect.value, yearSelect.value));
+          themeSelect.addEventListener('change', () => render(typeSelect.value, themeSelect.value, yearSelect.value));
+          yearSelect.addEventListener('change', () => render(typeSelect.value, themeSelect.value, yearSelect.value));
+        })
+        .catch(error => {
+          document.getElementById('error').textContent = 'Error: ' + error.message;
+        });
+    };
+  </script>
+</body>
+</html>
