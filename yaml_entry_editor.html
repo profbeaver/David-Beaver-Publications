@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YAML Entry Editor</title>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <style>
+    body { font-family: sans-serif; margin: 2em; }
+    #editor { width: 100%; height: 300px; }
+    #entryList { max-height: 200px; overflow-y: auto; border: 1px solid #ccc; padding: 0.5em; margin-bottom: 1em; }
+    #entryList button { display: block; margin: 0.25em 0; }
+    textarea { font-family: monospace; }
+  </style>
+</head>
+<body>
+<h1>YAML Entry Editor</h1>
+<input type="file" id="yamlFile" accept=".yaml, .yml"><br><br>
+<div id="entryList"></div>
+<textarea id="editor" placeholder="Select an entry to edit"></textarea><br>
+<button id="save">Save Entry</button>
+<button id="download">Download Updated YAML</button>
+<script>
+let entries = [];
+let currentIndex = -1;
+
+function renderList() {
+  const list = document.getElementById('entryList');
+  list.innerHTML = '';
+  entries.forEach((entry, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = `${i + 1}: ${entry.title || 'Untitled'}`;
+    btn.onclick = () => {
+      currentIndex = i;
+      document.getElementById('editor').value = jsyaml.dump(entry);
+    };
+    list.appendChild(btn);
+  });
+}
+
+document.getElementById('yamlFile').addEventListener('change', (e) => {
+  const reader = new FileReader();
+  reader.onload = function(event) {
+    entries = jsyaml.load(event.target.result);
+    renderList();
+  };
+  reader.readAsText(e.target.files[0]);
+});
+
+document.getElementById('save').onclick = () => {
+  if (currentIndex >= 0) {
+    try {
+      entries[currentIndex] = jsyaml.load(document.getElementById('editor').value);
+      renderList();
+    } catch (err) {
+      alert("YAML parse error: " + err.message);
+    }
+  }
+};
+
+document.getElementById('download').onclick = () => {
+  const blob = new Blob([jsyaml.dump(entries)], { type: 'text/yaml' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'updated_publications.yaml';
+  a.click();
+};
+</script>
+</body>
+</html>
